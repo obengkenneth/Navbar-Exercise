@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 200vh;
+    position: relative;
+}
+nav {
+    height: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: larger;
+}
+h1 {
+    padding-left: 5.5em;
+}
+ nav ul {
+    list-style-type: none;
+    width: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 7em;
+}
+main .hero {
+     max-width: 100%;
+     height: 30em;
+    background-image: url('./full-illustration-desktop-20220802@2x.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    height: 15em;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2;
+    padding-top: 4em;
+    background-color: rgb(137,137,137);
+}
+.footer ul {
+    list-style-type: none;
+}
+
+.ready {
+    border:1px solid grey;
+    padding-top:3em;
+    height: 10em;
+    background-color: rgb(248,248,248);
+    width: 50em;
+    position: absolute;
+    bottom: 14em;
+    left: 17em;
+    border-radius: 1.1em;
+    z-index: 1;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    margin-right: 2em;
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    color: #0d172a;
+    cursor: pointer;
+    /* padding: 1rem 1.6rem; */
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    touch-action: manipulation;
+}
+
+
+button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+input {
+    height: 2.5em;
+    width:20em;
+    border-radius: 1em;
+    border: none;
+}
